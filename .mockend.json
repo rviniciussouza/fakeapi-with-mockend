@@ -8,7 +8,14 @@
           "max": "2023-01-30T23:59:59Z"
         }
       },
-      "comments": { "hasMany": "Comment" }
+      "comments": { "hasMany": "Comment" },
+      "status": {
+        "string": [
+            "FINALIZADO", 
+            "PROCESSANDO",
+            "ABORTADO"
+        ]
+      }
     },
     "Comment": {
       "body": { "string": {} },
