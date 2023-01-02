@@ -1,5 +1,5 @@
 {
-    "Post": {
+    "Emissao": {
       "_": { "items": 20 },
       "title": { "string": {} },
       "createdAt": {
@@ -8,17 +8,47 @@
           "max": "2023-01-30T23:59:59Z"
         }
       },
-      "comments": { "hasMany": "Comment" },
+      "qtdNotas": { "int": {
+        "min": 1,
+        "max": 100
+      }},
+      "qtdProdutos": { "int": {
+        "min": 10,
+        "max": 10000
+      }},
+      "qtdNotasEmitidas": {
+        "int": {
+            "min": 0,
+            "max": 100
+        }
+      },
+      "emitente": {
+        "int": [
+            33,
+            50,
+            90,
+            100
+        ]
+      },
+      "destinatario": {
+        "int": [
+            22,
+            55,
+            91,
+            105
+        ]
+      },
       "status": {
         "string": [
             "FINALIZADO", 
             "PROCESSANDO",
             "ABORTADO"
         ]
+      },
+      "tipo": {
+        "string": [
+            "Movimentação de estoque"
+        ]
       }
-    },
-    "Comment": {
-      "body": { "string": {} },
-      "post": { "belongsTo": "Post" }
     }
   }
