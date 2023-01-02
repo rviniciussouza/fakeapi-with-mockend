@@ -1,7 +1,6 @@
 {
-    "Emissao": {
+    "Post": {
       "_": { "items": 20 },
-      "title": { "string": {} },
       "createdAt": {
         "dateTime": {
           "min": "2022-11-01T00:00:00Z",
