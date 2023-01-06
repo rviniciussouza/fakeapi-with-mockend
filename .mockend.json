@@ -48,6 +48,34 @@
         "string": [
             "Movimentação de estoque"
         ]
+      },
+      "userComments": {
+        "hasMany": "Comment"
+      }
+    },
+    "Comment": {
+      "_": { "items": 20 },
+      "createdAt": {
+        "dateTime": {
+          "min": "2022-11-01T00:00:00Z",
+          "max": "2023-01-30T23:59:59Z"
+        }
+      },
+      "qtdProdutos": {
+        "int": {
+          "min": 10,
+          "max": 10000
+        }
+      },
+      "status": {
+        "string": [
+            "FINALIZADO", 
+            "PROCESSANDO",
+            "ABORTADO"
+        ]
+      },
+      "chaveAcesso": {
+        "regexp": "[A-Z][a-z][1-10]{42}"
       }
     }
 }
