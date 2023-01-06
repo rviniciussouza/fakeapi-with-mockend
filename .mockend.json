@@ -90,12 +90,12 @@
         "name": {
           "string": [
             "EMISSAO"
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
@@ -116,12 +116,12 @@
         "name": {
           "string": [
             "RESERVA DE IDS."
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
@@ -142,12 +142,12 @@
         "name": {
           "string": [
             "CALCULO DE IMPOSTOS"
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
@@ -168,12 +168,12 @@
         "name": {
           "string": [
             "REGISTRO DE NOTA FISCAL"
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
@@ -194,12 +194,12 @@
         "name": {
           "string": [
             "MOVIMENTAÇÃO DE ESTOQUE"
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
@@ -220,12 +220,12 @@
         "name": {
           "string": [
             "SEFAZ"
-          ],
-          "createdAt": {
-            "dateTime": {
-              "min": "2022-11-01T00:00:00Z",
-              "max": "2023-01-30T23:59:59Z"
-            }
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
           }
         },
         "finishedAt": {
