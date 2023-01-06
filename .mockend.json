@@ -1,81 +1,247 @@
 {
-    "Post": {
-      "_": { "items": 20 },
-      "createdAt": {
-        "dateTime": {
-          "min": "2022-11-01T00:00:00Z",
-          "max": "2023-01-30T23:59:59Z"
-        }
-      },
-      "qtdNotas": { "int": {
-        "min": 1,
-        "max": 100
-      }},
-      "qtdProdutos": { "int": {
-        "min": 10,
-        "max": 10000
-      }},
-      "qtdNotasEmitidas": {
-        "int": {
-            "min": 0,
-            "max": 100
-        }
-      },
-      "emitente": {
-        "int": [
-            33,
-            50,
-            90,
-            100
-        ]
-      },
-      "destinatario": {
-        "int": [
-            22,
-            55,
-            91,
-            105
-        ]
-      },
-      "status": {
-        "string": [
-            "FINALIZADO", 
-            "PROCESSANDO",
-            "ABORTADO"
-        ]
-      },
-      "tipo": {
-        "string": [
-            "Movimentação de estoque"
-        ]
-      },
-      "userComments": {
-        "hasMany": "Comment"
+  "Post": {
+    "_": {
+      "items": 20
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2022-11-01T00:00:00Z",
+        "max": "2023-01-30T23:59:59Z"
       }
     },
-    "Comment": {
-      "_": { "items": 20 },
-      "createdAt": {
-        "dateTime": {
-          "min": "2022-11-01T00:00:00Z",
-          "max": "2023-01-30T23:59:59Z"
-        }
-      },
-      "qtdProdutos": {
-        "int": {
-          "min": 10,
-          "max": 10000
-        }
-      },
-      "status": {
-        "string": [
-            "FINALIZADO", 
+    "qtdNotas": {
+      "int": {
+        "min": 1,
+        "max": 100
+      }
+    },
+    "qtdProdutos": {
+      "int": {
+        "min": 10,
+        "max": 10000
+      }
+    },
+    "qtdNotasEmitidas": {
+      "int": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    "emitente": {
+      "int": [
+        33,
+        50,
+        90,
+        100
+      ]
+    },
+    "destinatario": {
+      "int": [
+        22,
+        55,
+        91,
+        105
+      ]
+    },
+    "status": {
+      "string": [
+        "FINALIZADO",
+        "PROCESSANDO",
+        "ABORTADO"
+      ]
+    },
+    "tipo": {
+      "string": [
+        "Movimentação de estoque"
+      ]
+    },
+    "userComments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "_": {
+      "items": 20
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2022-11-01T00:00:00Z",
+        "max": "2023-01-30T23:59:59Z"
+      }
+    },
+    "qtdProdutos": {
+      "int": {
+        "min": 10,
+        "max": 10000
+      }
+    },
+    "status": {
+      "string": [
+        "FINALIZADO",
+        "PROCESSANDO",
+        "ABORTADO"
+      ]
+    },
+    "chaveAcesso": {
+      "regexp": "[A-Z][a-z][1-10]{42}"
+    },
+    "eventos": [
+      {
+        "name": {
+          "string": [
+            "EMISSAO"
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
             "PROCESSANDO",
             "ABORTADO"
-        ]
+          ]
+        }
       },
-      "chaveAcesso": {
-        "regexp": "[A-Z][a-z][1-10]{42}"
+      {
+        "name": {
+          "string": [
+            "RESERVA DE IDS."
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "CALCULO DE IMPOSTOS"
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "REGISTRO DE NOTA FISCAL"
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "MOVIMENTAÇÃO DE ESTOQUE"
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "SEFAZ"
+          ],
+          "createdAt": {
+            "dateTime": {
+              "min": "2022-11-01T00:00:00Z",
+              "max": "2023-01-30T23:59:59Z"
+            }
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
       }
-    }
+    ]
+  }
 }
