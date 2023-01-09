@@ -52,7 +52,7 @@
     },
     "tipo": {
       "string": [
-        "Movimentação de estoque"
+        "Movimentacao de estoque"
       ]
     },
     "userComments": {
@@ -84,6 +84,164 @@
     },
     "chaveAcesso": {
       "regexp": "[A-Z][a-z][1-10]{42}"
-    }
+    },
+    "eventos": [
+      {
+        "name": {
+          "string": [
+            "EMISSAO"
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "RESERVA DE IDS."
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "CALCULO DE IMPOSTOS"
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "REGISTRO DE NOTA FISCAL"
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "MOVIMENTAÇÃO DE ESTOQUE"
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      },
+      {
+        "name": {
+          "string": [
+            "SEFAZ"
+          ]
+        },
+        "createdAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "finishedAt": {
+          "dateTime": {
+            "min": "2022-11-01T00:00:00Z",
+            "max": "2023-01-30T23:59:59Z"
+          }
+        },
+        "status": {
+          "string": [
+            "FINALIZADO",
+            "PROCESSANDO",
+            "ABORTADO"
+          ]
+        }
+      }
+    ]
   }
 }
